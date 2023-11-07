@@ -1,1 +1,1 @@
-# odin-recipes
+practice repository to further develop my skills in html with the odin project.
