@@ -1,0 +1,28 @@
+.recipe {
+    background-color: antiquewhite;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+
+.pierecipe {
+    border-color: black;
+    border-style: solid;
+    height: 65vh;
+    width: 40vw;
+    position: relative;
+    display: block;
+    margin: 10px;
+}
+
+.pieheader {
+    color: red;
+    position: absolute;
+    height: 20px;
+    display: block;
+    
+}
+
+.homebtn {
+    border-color: black;
+    position: absolute;
+}
