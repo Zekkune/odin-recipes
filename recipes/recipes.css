@@ -1,7 +1,11 @@
 .recipe {
-    background-color: antiquewhite;
+    background-color: burlywood;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 14px;
 }
 
 .pierecipe {
@@ -9,20 +13,83 @@
     border-style: solid;
     height: 65vh;
     width: 40vw;
-    position: relative;
-    display: block;
     margin: 10px;
+    display: flex;
+    align-items: baseline;
+    flex-direction: column;
+    position: relative;
 }
 
-.pieheader {
-    color: red;
+.pieimg {
+    background: linear-gradient(to bottom, red, #800020);
+    background-size: cover;
+    background-origin: border-box;
+    border: .5rem double olive;
+    box-shadow: 0 0 0px black;
+    border-radius: 50%;
     position: absolute;
+    height: 150px;
+    width: 150px;
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    animation: down 1s forwards, grow 1.5s 1.5s forwards, up 1s 1.5;
+    transform: scale(0.3);
+    transition: 0.3s;
+    
+}
+
+.piedisc {
+    color: red;
+    align-self: flex-start;
     height: 20px;
-    display: block;
+    padding-bottom: 20px;
     
 }
 
 .homebtn {
     border-color: black;
-    position: absolute;
+   
 }
+
+.ingredientslist {
+    padding-bottom: 10px;
+}
+
+@keyframes down {
+    from {
+        top: 0;
+    }
+    to {
+        top: 100%;
+    }
+}
+
+@keyframes grow {
+    from {
+        transform: scale(0.3)
+    }
+    to {
+        transform: scale(4.5);
+    }
+
+}
+
+@keyframes shrink {
+    from {
+        transform: scale(4.5);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+@keyframes up {
+    100% {
+        top: 0%;
+
+}
+}
+
+
+
