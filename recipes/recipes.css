@@ -8,16 +8,16 @@
     font-size: 14px;
 }
 
-.pierecipe {
+.container {
     border-color: black;
     border-style: solid;
     height: 65vh;
     width: 40vw;
-    margin: 10px;
     display: flex;
     align-items: baseline;
     flex-direction: column;
     position: relative;
+    top: 100px;
 }
 
 .pieimg {
@@ -32,11 +32,9 @@
     width: 150px;
     display: flex;
     align-self: center;
-    justify-self: center;
-    animation: down 1s forwards, grow 1.5s 1.5s forwards, up 1s 1.5;
-    transform: scale(0.3);
-    transition: 0.3s;
-    
+    justify-self: baseline;
+    animation: DownGrowUpShrink 4s forwards;
+    transform: scale(0.2) translateY(0);
 }
 
 .piedisc {
@@ -56,40 +54,46 @@
     padding-bottom: 10px;
 }
 
-@keyframes down {
-    from {
-        top: 0;
-    }
-    to {
-        top: 100%;
-    }
+.dropdown-content1 {
+    color: red;
+    display: block;
+    text-decoration: none;
 }
 
-@keyframes grow {
-    from {
-        transform: scale(0.3)
-    }
-    to {
-        transform: scale(4.5);
-    }
-
+.dropdown-content1, .dropdown-content2 {
+    display: none;
+    position: absolute;
+    
 }
 
-@keyframes shrink {
-    from {
-        transform: scale(4.5);
-    }
-    to {
-        transform: scale(1);
-    }
+.dropbtn1:hover + .dropdown-content1 {
+    display: block;
+    color: black;
+    background-color: brown;
 }
 
-@keyframes up {
+
+
+@keyframes DownGrowUpShrink {
+    0% {
+        transform: translateY(0) scale(0.2);
+        box-shadow: 100px 100px 10px 10000px black;
+    }
+
+    25% {
+        transform: translateY(65vh) scale(0.2);
+    }
+    35% {
+        transform: translateY(65vh) scale(3.5);
+    }
+    85% {
+        transform: translateY(-60%) scale(3.5);
+        box-shadow: 0 0 10px black;
+    }
     100% {
-        top: 0%;
+        transform: translateY(-60%) scale(1);
+        box-shadow: 0 0 10px black;
+    }
 
 }
-}
-
-
 
