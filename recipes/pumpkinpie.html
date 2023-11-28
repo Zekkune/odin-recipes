@@ -4,35 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <link rel="stylesheet" href="recipes.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vina+Sans&display=swap" rel="stylesheet">
 </head>
 
 <body class="recipe pumpkin">
    
 
-    <div class="pierecipe">
+    <div class="container">
         <img src="../Pie-pic.webp" alt="img of a scrumptious pumpkin pie" class="pieimg">
         <p class="piedisc">Embrace the essence of fall with a classic pumpkin pie. A buttery crust cradles a velvety filling of pure pumpkin, sugar, and spices, baked to perfection. The result is a golden delight that captures the essence of autumn in every bite, whether enjoyed on its own or with a dollop of whipped cream.</p>
         <p class="Ingredients">
         <h1>Ingredients:</h1>
             
-            For the Pie Crust: 
+    <div class="dropdown1"> 
+        <h2>For the Pie Crust:</h2>    
             <ul>
-                <li class="ingredientslist">1/4 cups all-purpose flour</li>
-                <li class="ingredientslist">1/2 cup unsalted butter, chilled and cut into small pieces</li>
-                <li class="ingredientslist">1/4 teaspoon salt</li>
-                <li class="ingredientslist">2-3 tablespoons ice water</li>
+                <li>1/4 cups all-purpose flour</li>
+                <li>1/2 cup unsalted butter, chilled and cut into small pieces</li>
+                <li>1/4 teaspoon salt</li>
+                <li>2-3 tablespoons ice water</li>
+            </ul>   
+    </div>
+
+    <div class="dropdown2"><button class="dropbtn2" onclick="myDropdown()" id="dropbtn2">For the Pumpkin Filling:</button>
+
+        <div class="dropdown-content2">
+            <ul>
+                <li class="ingredientslist">1 can (15 ounces) pure pumpkin puree</li>
+                <li class="ingredientslist">3/4 cup granulated sugar</li>
+                <li class="ingredientslist">1 teaspoon ground cinnamon</li>
+                <li class="ingredientslist">1/2 teaspoon ground ginger</li>
+                <li class="ingredientslist">1/4 teaspoon ground cloves</li>
+                <li class="ingredientslist">1/2 teaspoon salt</li>
+                <li class="ingredientslist">2 large eggs</li>
+                <li class="ingredientslist">1 and 1/4 cups evaporated milk (or half-and-half)</li>
             </ul>
+        </div>
+    </div>
             
-            For the Pumpkin Filling:
-            1 can (15 ounces) pure pumpkin puree
-            3/4 cup granulated sugar
-            1 teaspoon ground cinnamon
-            1/2 teaspoon ground ginger
-            1/4 teaspoon ground cloves
-            1/2 teaspoon salt
-            2 large eggs
-            1 and 1/4 cups evaporated milk (or half-and-half)
+            
+            
+            
+            
+            
+            
             Instructions:
             
         </p>
@@ -44,6 +63,6 @@
    
         
            
-        
+    <script src="recipes.js"></script>     
 </body>
 </html>
