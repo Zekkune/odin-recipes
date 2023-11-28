@@ -1,3 +1,4 @@
+
 .recipe {
     background-color: burlywood;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -6,17 +7,18 @@
     justify-content: center;
     flex-direction: column;
     font-size: 14px;
+    max-width: 600px;
+    margin: 0 auto;
 }
 
 .container {
     border-color: black;
     border-style: solid;
-    height: 65vh;
-    width: 40vw;
     display: flex;
     align-items: baseline;
     flex-direction: column;
     position: relative;
+    padding: 20px;
     top: 100px;
 }
 
@@ -50,29 +52,60 @@
    
 }
 
-.ingredientslist {
-    padding-bottom: 10px;
+.ingredientsList ul {
+    opacity: 1;
+    height: 150px;
+    margin: 10px 0;
+    transition: height 1s, opacity 1s;
 }
+
+.ingredientsList li {
+    opacity: 1;
+    margin: 10px 0;
+    transition: height 1s, opacity 1s;
+    font-family: 'Vina Sans', sans-serif;
+}
+
+
+ul {
+    opacity: 0;
+    height: 0;
+    margin: 10px 0 0 0;
+    transition: height 1s, opacity 1s;
+    font-size: 20px;
+    letter-spacing: 4px;
+    font-family: 'Vina Sans', sans-serif;
+}
+
+
 
 .dropdown-content1 {
-    color: red;
-    display: block;
-    text-decoration: none;
-}
-
-.dropdown-content1, .dropdown-content2 {
     display: none;
-    position: absolute;
-    
 }
 
-.dropbtn1:hover + .dropdown-content1 {
-    display: block;
-    color: black;
-    background-color: brown;
+h1 {
+    font-family: 'Vina Sans', sans-serif;
+    letter-spacing: 6px;
+    border-bottom: black 2px solid;
+    width: 100%;
+    font-size: 36px;
+    -webkit-text-stroke: 3px black;
+    -webkit-text-fill-color: burlywood;
+    text-align: center;
+    margin: 0 0 10px 0;
+    line-height: 48px;
 }
 
+h2 {
+    -webkit-text-stroke: 2px #800020;
+    -webkit-text-fill-color: burlywood;
+    font-family: 'Vina Sans', sans-serif;
+    letter-spacing: 4px;
+    line-height: 15px;
+    font-size: 1.8rem;
+}
 
+/*
 
 @keyframes DownGrowUpShrink {
     0% {
